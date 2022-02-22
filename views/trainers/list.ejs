@@ -1,0 +1,39 @@
+<% include ../header %>
+    <table class="table-striped table-dark">
+        <thead>
+            <tr>
+                <th class="col-1">Id</th>
+                <th class="col-2">First Name</th>
+                <th class="col-2">Last Name</th>
+                <th class="col-3">Email</th>
+                <th class="col-2">Subject</th>
+            </tr>
+        </thead>
+        <% for(var i=0; i < list.length; i++) { %>
+            <tr id='<%= `${list[i].id}`%>row'>
+                <td class="col-1">
+                    <%= `${list[i].id}` %>
+                </td>
+                <td>
+                    <%= `${list[i].firstName} `%>
+                </td>
+                <td>
+                    <%= `${list[i].lastName} `%>
+                </td>
+                <td>
+                    <%= `${list[i].email} `%>
+                </td>
+                <td>
+                    <%= `${list[i].subject} `%>
+                </td>
+                <td>
+                    <a class="btn btn-primary" role="button" href="/trainers/delete?id=<%=`${list[i].id}`%>">Delete</a>
+                </td>
+                <td>
+                    <a class="btn btn-primary" role="button" href="/trainers/update?id=<%=`${list[i].id}`%>">Update</a>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+    </div>
+    <% include ../footer %>

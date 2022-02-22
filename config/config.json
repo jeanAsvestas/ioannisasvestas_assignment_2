@@ -1,10 +1,11 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "team3",
+    "password": "Maria1804",
+    "database": "ioannisSails002",
+    "host": "ra1.anystream.eu",
+    "dialect": "mysql",
+    "port": "1804"
   },
   "test": {
     "username": "root",

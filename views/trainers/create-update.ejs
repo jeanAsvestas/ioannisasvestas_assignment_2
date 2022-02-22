@@ -1,0 +1,25 @@
+<% include ../header %>
+    <form class="align-self-center" action="/trainers/<%=action%>" method="POST">
+        <input type="text" name="id" value="<%= trainer.id %>" hidden readonly />
+
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control col-sm-6" title=" firstName" value="<%= trainer.firstName %>"
+            name="firstName" placeholder="Enter first name" />
+
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control col-sm-6" title=" lastName" value="<%= trainer.lastName %>"
+            name="lastName" placeholder="Enter last name" />
+
+        <label for="email">Email address</label>
+        <input type="email" class="form-control col-sm-6" title=" email" value="<%= trainer.email %>" name="email"
+            placeholder="Enter email" />
+
+        <label for="subject">Subject</label>
+        <input type="text" class="form-control col-sm-6" title=" subject" value="<%= trainer.subject %>" name="subject"
+            placeholder="Enter subject" /><br />
+
+        <button type="submit" class=" btn btn-primary ">Submit</button>
+
+    </form>
+    </div>
+    <% include ../footer %>
